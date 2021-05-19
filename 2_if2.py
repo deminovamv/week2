@@ -17,9 +17,9 @@ def compare(str_one,str_two):
         return '0'
     elif len(str_one) == len(str_two):
         return '1'    
-    elif len(str_one) != len(str_two) and len(str_one) > len(str_two) and str_two != 'learn':
+    elif len(str_one) > len(str_two) and str_two != 'learn':
         return '2'
-    elif str_one != str_two and str_two == 'learn':
+    elif str_two == 'learn':
         if len(str_one) > len(str_two):
             return '2,3'
         return '3'
