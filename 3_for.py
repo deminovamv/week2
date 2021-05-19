@@ -6,11 +6,6 @@
 * Посчитать и вывести средний балл по всей школе.
 * Посчитать и вывести средний балл по каждому классу.
 """
-def sum_scores(students_scores):
-    scores_sum = 0
-    for score in students_scores:
-        scores_sum += score
-    return(scores_sum)
 
 
 def main():
@@ -39,7 +34,7 @@ def main():
     scores_sum = 0
     students_scores = 0
     for l in list_school:
-        class_scores = sum_scores(l['scores'])
+        class_scores = sum(l['scores'])
         scores_sum += class_scores
         students_scores += len(l['scores'])
         scores_avg = class_scores / len(l['scores'])
