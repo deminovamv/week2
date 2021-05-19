@@ -14,19 +14,19 @@
 
 def compare(str_one,str_two):
     if type(str_one) is not str and type(str_two) is not str: 
-        return('0')
+        return '0'
     elif len(str_one) == len(str_two):
-        return('1')    
+        return '1'    
     elif len(str_one) != len(str_two) and len(str_one) > len(str_two) and str_two != 'learn':
-        return ('2')
+        return '2'
     elif str_one != str_two and str_two == 'learn':
         if len(str_one) > len(str_two):
-            return('2,3')
-        return('3')
+            return '2,3'
+        return '3'
     else:
-        return('нет ответа')
+        return 'нет ответа'
 def main():
-    print(compare('нет ответа','learn'))
+    print(compare('learn','learn'))
     
 if __name__ == "__main__":
     main()
